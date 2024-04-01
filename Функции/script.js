@@ -189,3 +189,103 @@ console.log(student);
 console.log(student.fName);
 console.log(student.lName);
 */
+
+/**
+ * область видимости
+ */
+/*
+// получаю заголовок со страницы
+let header = document.querySelector("h1");
+//console.log(header);
+
+function changeText() {
+  // меняем текст элемента
+  header.textContent = "Hello";
+}
+changeText();
+*/
+
+/*
+let userName = "Ivan123";
+
+function greetUser() {
+  console.log(`Hello, ${userName}`);
+}
+greetUser();*/
+
+/*
+let userName = "Ivan123";
+
+function greetUser() {
+  let userName = "Petr444";
+  console.log(`Hello, ${userName}`);
+}
+greetUser();
+*/
+
+/*
+let age = 33;
+if (age >= 18) {
+  let result = "Проходи";
+} else {
+  let result = "Стоп";
+}
+console.log(result);
+*/
+
+/*
+let age = 33;
+let result;
+if (age >= 18) {
+  result = "Проходи";
+} else {
+  result = "Стоп";
+}
+console.log(result);
+*/
+
+/*
+const PI = 3.14;
+const fName = "Иван";
+fName = "Петр";
+*/
+
+/**
+ * функциональное выражение
+ */
+//1
+/*
+// определение функции
+// вызываю
+getUserInfo();
+// объявляю
+function getUserInfo() {
+  console.log("User1");
+}
+*/
+
+// функциональное выражение
+/*
+let getUserInfo = function () {
+  console.log("User1");
+};
+getUserInfo();
+*/
+
+/*
+let getUserInfo = function () {
+  return "User1";
+};
+let test = getUserInfo();
+console.log(test);*/
+
+/*
+// передача функции как значения
+// getUserInfo() - вызов функции
+// getUserInfo - передача функции как значения
+let getUserInfo = function () {
+  return "User1";
+};
+let test = getUserInfo;
+console.log(test());
+*/
